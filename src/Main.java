@@ -7,8 +7,13 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         int message = sc.nextInt();
-        WorkDay firstWorkDay = new WorkDay();
-        //Stack<Integer> stackOfMessage = new Stack<>();
-        firstWorkDay.message(message);
+
+        String result;
+        if (message == -97) {
+            result = WorkDayJob.messageOfPoint();
+        } else {
+            result = "";
+        }
+        System.out.println(result);
     }
 }
